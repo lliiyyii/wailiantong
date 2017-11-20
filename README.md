@@ -6,8 +6,8 @@
 - 服务器端文档在back分支下的Readme.md
 
 ## 运行效果
-图片展示请前往Android分支查看Readme.md
-视频展示请前往Master查看video_demo文件夹
+ - 图片展示请前往Android分支查看Readme.md
+ - 视频展示请前往Master查看video_demo文件夹
 
 ## 项目概述
  - 本项目主题为智慧校园，以Android端APP的形式进行展示。
