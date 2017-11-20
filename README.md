@@ -16,26 +16,28 @@
 ![Markdown](http://i2.bvimg.com/619352/d74e870974d47018.jpg)
 ![Markdown](http://i2.bvimg.com/619352/3c97830087b1db16.jpg)
  - 修改密码重置密码略
+ 
 2.身份验证模块
 ---
  - 进入后需要进行身份验证，未进行验证的无法进入APP
- ![Markdown](http://i2.bvimg.com/619352/2f5f18515dac119b.jpg)
+  - ![Markdown](http://i2.bvimg.com/619352/2f5f18515dac119b.jpg)
  - 身份验证共分为身份证识别与营业执照识别，一次识别完成后若对结果不满意可点击进行再次识别。通过后置摄像头对证件拍照的方式来采集数据
-  ![Markdown](http://i2.bvimg.com/619352/84809970e182cf70.jpg)
-![Markdown](http://i2.bvimg.com/619352/199a22006f109378.jpg)
+ - ![Markdown](http://i2.bvimg.com/619352/84809970e182cf70.jpg)
+ - ![Markdown](http://i2.bvimg.com/619352/199a22006f109378.jpg)
  - 剩余步骤略
+ 
 3.主界面
 ---
  - 分为四个主页面，首页，订单，消息，我的
 
  - 首页列表提供了多种方式的筛选（例如价格从低到高、信用优先等），搜索功能（点击搜索框即可）订单的创建（点击加号即可进入）
-  ![Markdown](http://i2.bvimg.com/619352/595abac92ace7364.jpg)
- ![Markdown](http://i2.bvimg.com/619352/b706fcac416aa480.jpg)
+  - ![Markdown](http://i2.bvimg.com/619352/595abac92ace7364.jpg)
+  - ![Markdown](http://i2.bvimg.com/619352/b706fcac416aa480.jpg)
  - 用户点击任一条即可查看信息，进行留言以及接受操作
- ![Markdown](http://i2.bvimg.com/619352/c69047a178ca39e0.jpg)
+ - ![Markdown](http://i2.bvimg.com/619352/c69047a178ca39e0.jpg)
 
  - 订单页提供了与用户相关订单的展示，（包括接受的订单，发布的订单）
  - 消息页展示了与用户有关的系统消息
  
  - 我的页展示了个人信息并提供了查看信息，修改密码，退出登录的功能
- ![Markdown](http://i2.bvimg.com/619352/7f4981f47754baf2.jpg)
+ -  ![Markdown](http://i2.bvimg.com/619352/7f4981f47754baf2.jpg)
