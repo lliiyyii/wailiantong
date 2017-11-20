@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/zsy_dialog_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/zsy_dialog_live" />
+
+    <!--<Button-->
+
+        <!--android:id="@+id/live_dialog_take"-->
+        <!--android:layout_width="275dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_below="@id/zsy_dialog_pic"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="21dp"-->
+        <!--android:background="@drawable/dialog_white_btn"-->
+        <!--android:text="身份证识别"-->
+        <!--android:textColor="@color/gongzhengtong_red"-->
+        <!--android:textSize="20dp" />-->
+<TextView
+    android:layout_centerHorizontal="true"
+    android:textSize="18dp"
+    android:layout_below="@id/zsy_dialog_pic"
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="系统检测到您还没有进行实名验证,
+
+               功能暂不能使用"/>
+    <Button
+        android:id="@+id/active_dialog_commit"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/zsy_dialog_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/dialog_red_btn"
+        android:text="请点此进行实名验证"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</RelativeLayout>

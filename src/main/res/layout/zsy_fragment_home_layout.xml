@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="10dp"-->
+            <!--android:background="@color/gongzhengtong_red">-->
+
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--布局上面出现白边-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:adjustViewBounds="true"-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/home_red_bg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="33.5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <RelativeLayout
+
+                    android:layout_width="348dp"
+                    android:layout_height="392dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="226dp"
+                    android:background="@drawable/layout_background">
+
+                    <LinearLayout
+                        android:layout_width="317dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:background="#fafafa"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/zsy_home_test1"
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:background="#fff"
+                            android:elevation="1dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/home_icon1" />
+
+                            <View
+                                android:layout_width="3px"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="54dp"
+                                android:background="@color/gongzhengtong_gray">
+
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="73dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="真人与证件照对比"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="智能检测照片"
+                                    android:textColor="@color/text_gray" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/home_icon6" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/zsy_home_test2"
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#fff"
+                            android:elevation="1dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/home_icon2" />
+
+                            <View
+                                android:layout_width="3px"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="54dp"
+                                android:background="@color/gongzhengtong_gray">
+
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="73dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="真人与公安库对比"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="智能身份审核"
+                                    android:textColor="@color/text_gray" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/home_icon6" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/zsy_home_test3"
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#fff"
+                            android:elevation="1dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/home_icon3" />
+
+                            <View
+                                android:layout_width="3px"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="54dp"
+                                android:background="@color/gongzhengtong_gray">
+
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="73dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="身份证识别"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="证件检测"
+                                    android:textColor="@color/text_gray" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/home_icon6" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/zsy_home_test4"
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#fff"
+                            android:elevation="1dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/home_icon4" />
+
+                            <View
+                                android:layout_width="3px"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="54dp"
+                                android:background="@color/gongzhengtong_gray">
+
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="73dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="营业执照识别"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="执照检测"
+                                    android:textColor="@color/text_gray" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/home_icon6" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/zsy_home_test5"
+                            android:layout_width="match_parent"
+                            android:layout_height="63dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#fff"
+                            android:elevation="1dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@mipmap/home_icon5" />
+
+                            <View
+                                android:layout_width="3px"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="54dp"
+                                android:background="@color/gongzhengtong_gray">
+
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="73dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="户口本识别"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:text="户口信息检测"
+                                    android:textColor="@color/text_gray" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:src="@mipmap/home_icon6" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

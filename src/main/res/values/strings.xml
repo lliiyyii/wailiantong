@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">外联通</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="get_button">Send Http Get Request</string>
+    <string name="post_form_button">Send Http Post form Request</string>
+    <string name="post_bytes_button">Send Http Post bytes Request</string>
+    <string name="put_bytes_button">Send Http Put bytes Request</string>
+    <string name="delete_button">Send Http DELETE Request</string>
+
+    <string name="api_key">LCFfgmFgLD4zxEG6PS0hcSGr_qHBgKSR</string>
+    <string name="api_secret">0KUxKNstl8MoTKN_aaE4zAH64ksszjUD</string>
+</resources>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.wailiantong.CameraView.CameraBusinessSurfaceViewCopy
+        android:id="@+id/re_business_cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.wailiantong.CameraView.CameraBusinessTopRectView
+        android:id="@+id/re_business_rectOnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentBottom="true"
+            android:background="#2b2b2b">
+            <ImageView
+                android:id="@+id/re_business_takePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/zsy_camera_btn" />
+            <ImageView
+                android:id="@+id/re_business_camera_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/zsy_camera_viewpic"/>
+            <TextView
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="x"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="45dp"/>
+            <ImageView
+                android:id="@+id/re_business_camera_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/zsy_camera_cancel"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/gongzhengtong_red">
+
+        <ImageView
+            android:id="@+id/sendbusiness_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="33dp"
+            android:clickable="true"
+            android:src="@mipmap/white_back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="识别详情"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/sendbusiness_loading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        app:loading_color="@color/gongzhengtong_red"
+        app:loading_width="5dp" />
+
+    <TextView
+        android:id="@+id/sendbusiness_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendbusiness_loading"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:text="请稍候....图片正在上传中....."
+        android:textColor="@color/text_black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/sendbusiness_ok"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/commit_bottom_btn"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/sendbusiness_mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edit_seleted"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gongzhengtong_red"
+            android:src="@mipmap/active_business" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:text="公司："
+
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/active_sendbusiness_name"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="40dp"
+            android:text="张汤嬿"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="110dp"
+            android:text="代码："
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/active_sendbusiness_id"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/active_sendbusiness_name"
+            android:layout_marginTop="110dp"
+            android:text="成都电子科技大学"
+
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

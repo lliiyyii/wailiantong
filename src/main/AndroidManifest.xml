@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.wailiantong">
+    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:icon, android:theme">
+        <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+        <activity
+
+            android:name="com.example.wailiantong.MainActivity"
+            android:label="@string/app_name">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/xml_searchable" />
+
+        </activity>
+
+        <activity android:name="com.example.wailiantong.Activity.LoginActivity">
+
+        </activity>
+
+
+        <activity android:name="com.example.wailiantong.Activity.ActiveActivity"></activity>
+        <activity android:name="com.example.wailiantong.Activity.BaseActivity"></activity>
+        <activity android:name="com.example.wailiantong.Activity.FindPwdActivity"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ResetPwdActivity"></activity>
+        <activity android:name="com.example.wailiantong.Activity.MyInfoDetail"></activity>
+        <activity android:name="com.example.wailiantong.AliTest.demo.DisplayMessageActivity"></activity>
+        <activity android:name="com.example.wailiantong.AliTest.demo.DemoMainActivity"></activity>
+        <activity android:name="com.example.wailiantong.Activity.BusinessDetail"></activity>
+        <activity android:name="com.example.wailiantong.Activity.TakeCardId"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ReTakeCard"></activity>
+        <activity android:name="com.example.wailiantong.View.imagebrowse.windowsView.BrowserMain"></activity>
+        <activity android:name="com.example.wailiantong.View.imagebrowse.windowsView.ImageBrowseActivity"></activity>
+        <activity android:name="com.example.wailiantong.Activity.TakeBusiness"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ReTakeBusiness"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ReTakeHouse"></activity>
+        <activity android:name="com.example.wailiantong.Activity.TakeHouse"></activity>
+        <activity android:name="com.example.wailiantong.View.imagebrowse.windowsView.HouseTransmit"></activity>
+
+        <activity android:name="com.example.wailiantong.View.imagebrowse.windowsView.CardTransmit"></activity>
+        <activity android:name="com.example.wailiantong.View.imagebrowse.windowsView.BusinessTransmit"></activity>
+
+        <activity android:name="com.example.wailiantong.Activity.TemporaryActivity" />
+        <activity android:name="com.example.wailiantong.Activity.SearchByname"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ContinueCardId"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ContinueBusiness"></activity>
+
+        <activity android:name="com.example.wailiantong.Activity.LiveSearchMain"></activity>
+        <activity android:name="com.example.wailiantong.Activity.LivePicUrl"></activity>
+        <activity android:name="com.example.wailiantong.Activity.PhotoLoading"></activity>
+        <activity android:name="com.example.wailiantong.View.imagebrowse.windowsView.BrowserMainDetail"></activity>
+        <activity android:name="com.example.wailiantong.View.imagebrowse.windowsView.ImageBrowseActivityDetail"></activity>
+
+
+        <activity android:name="com.example.wailiantong.Activity.OrderDetail"></activity>
+        <activity
+            android:name="com.example.wailiantong.Activity.OrderMessage"
+            android:windowSoftInputMode="stateUnspecified|adjustPan"></activity>
+
+        <activity
+            android:name="com.example.wailiantong.Activity.OrderCreateActivity"
+            android:windowSoftInputMode="stateUnspecified|adjustPan"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ActiveIdentActivity"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ActiveCardId"></activity>
+
+        <activity
+            android:name="com.example.wailiantong.SplashActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.wailiantong.Activity.CalendarActivity" />
+        <activity android:name="com.example.wailiantong.Activity.ActiveImgTransmit"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ActiveResultID"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ActiveBusinessTransmit"></activity>
+        <activity android:name="com.example.wailiantong.Activity.ActiveBusiness"></activity>
+        <activity android:name="com.example.wailiantong.Activity.OrderRecver"></activity>
+
+
+
+    </application>
+
+    <uses-permission android:name="com.huawei.android.launcher.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+</manifest>

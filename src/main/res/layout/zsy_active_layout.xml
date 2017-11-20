@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/zsy_login_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/zsy_active_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:text="注册外联通"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <View
+            android:layout_width="127dp"
+            android:layout_height="2px"
+            android:layout_below="@id/zsy_active_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:background="@color/white">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="321dp"
+            android:layout_height="340dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="281dp"
+            android:background="@drawable/layout_background">
+
+            <RelativeLayout
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/zsy_active_phone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="53dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zsy_login_phone" />
+
+                    <EditText
+                        android:id="@+id/zsy_active_phone"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="34dp"
+                        android:background="@null"
+                        android:hint="请输入手机号码"
+                        android:inputType="number"
+                        android:textColorHint="@color/text_gray" />
+
+                    <View
+                        android:layout_width="237dp"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@+id/zsy_active_phone"
+                        android:layout_marginLeft="34dp"
+                        android:background="@color/text_gray">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/zsy_active_pwd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/zsy_active_phone_layout"
+                    android:layout_marginTop="34dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zsy_login_pwd" />
+
+                    <EditText
+                        android:id="@+id/zsy_active_pwd"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="34dp"
+                        android:background="@null"
+                        android:hint="请输入密码"
+                        android:inputType="numberPassword"
+                        android:textColorHint="@color/text_gray" />
+
+                    <View
+                        android:layout_width="237dp"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@+id/zsy_active_pwd"
+                        android:layout_marginLeft="34dp"
+                        android:background="@color/text_gray">
+
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/zsy_active_showpwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:src="@mipmap/zsy_seenot_pwd" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/zsy_active_code_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/zsy_active_pwd_layout"
+                    android:layout_marginTop="34dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zsy_active_code" />
+
+                    <EditText
+                        android:id="@+id/zsy_active_code"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="34dp"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:inputType="number"
+                        android:textColorHint="@color/text_gray" />
+
+                    <Button
+                        android:id="@+id/zsy_active_getcode"
+                        android:layout_width="90dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#d1cfcd"
+                        android:text="获取验证码"
+                        android:textColor="#fff"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:layout_width="237dp"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@+id/zsy_active_code"
+                        android:layout_marginLeft="34dp"
+                        android:background="@color/text_gray">
+
+                    </View>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/zsy_active_code_layout"
+                    android:layout_marginTop="13dp">
+
+                    <RelativeLayout
+                        android:clickable="true"
+                        android:id="@+id/zsy_active_business_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp">
+
+                        <ImageView
+                            android:id="@+id/zsy_active_business_img"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/select_unselected" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/zsy_active_business_img"
+                            android:text="商家"
+                            android:textColor="#B3A1A1"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:clickable="true"
+                        android:id="@+id/zsy_active_student_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="180dp">
+
+                        <ImageView
+                            android:id="@+id/zsy_active_student_img"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/select_unselected" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@id/zsy_active_student_img"
+                            android:text="学生"
+                            android:textColor="#B3A1A1"
+                            android:textSize="18dp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/zsy_active_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/zsy_active_code_layout"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/camera_btn_background"
+                    android:text="注册"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/zsy_active_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/zsy_active_button"
+                    android:layout_below="@id/zsy_active_button"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:text="登录"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/zsy_active_forget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/zsy_active_button"
+                    android:layout_below="@id/zsy_active_button"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:text="忘记密码？"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

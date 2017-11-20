@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_cardid">
+<!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/bagrod"-->
+    <!--android:alpha="0.9">-->
+
+<!--</RelativeLayout>-->
+    <com.example.wailiantong.CameraView.CameraSurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.wailiantong.CameraView.CameraTopRectView
+        android:id="@+id/rectOnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/camera_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请拍正面"
+            android:textColor="@color/gongzhengtong_red"
+            android:textSize="30dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_alignParentBottom="true"
+            android:background="#2b2b2b">
+            <ImageView
+                android:id="@+id/takePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/zsy_camera_btn" />
+            <ImageView
+                android:id="@+id/camera_viewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/zsy_camera_viewpic"/>
+            <TextView
+                android:id="@+id/camera_num"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="45dp"/>
+            <ImageView
+                android:id="@+id/camera_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/zsy_camera_cancel"/>
+        </RelativeLayout>
+        
+        <!--<ImageView-->
+            <!--android:clickable="true"-->
+            <!--android:id="@+id/takePic"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:src="@mipmap/take_pic_btn" />-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_marginLeft="13dp"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="53dp"-->
+            <!--android:background="@drawable/camera_btn_background">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/camera_viewall"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="17dp"-->
+                <!--android:text="查看照片"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/camera_num"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="17dp"-->
+                <!--android:text="0"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14dp" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:layout_marginRight="13dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="53dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/camera_btn_background">-->
+            <!--<TextView-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/camera_btn_background"-->
+                <!--android:id="@+id/camera_cancel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="取消"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14dp" />-->
+
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+</FrameLayout>

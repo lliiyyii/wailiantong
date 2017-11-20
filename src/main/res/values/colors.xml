@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#cccccc</color>
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+    
+    <color name="gongzhengtong_red">#eb5555</color>
+    <color name="text_black">#383838</color>
+    <color name="text_gray">#a6a4a4</color>
+    <color name="text_bottom_gray">#ccb7b6</color>
+    <color name="bagrod">#a0000000</color>
+    <color name="gongzhengtong_gray">#f7eded</color>
+    <color name="edit_text_gray">#f7eded</color>
+    <color name="bg_gray">#f5f5f5</color>
+    <color name="title_text_color">#594242</color>
+    <color name="black">#000</color>
+
+</resources>

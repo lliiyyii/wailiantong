@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/zsy_dialog_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/zsy_dialog_live" />
+
+    <Button
+
+        android:id="@+id/live_dialog_take"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/zsy_dialog_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/dialog_white_btn"
+        android:text="身份证识别"
+        android:textColor="@color/gongzhengtong_red"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/live_dialog_choose"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/live_dialog_take"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/dialog_red_btn"
+        android:text="选择身份证"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg"></LinearLayout>
+
+    <TextView
+        android:id="@+id/zsy_frag_my_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="269dp"
+        android:text="小郡肝串串"
+        android:textColor="@color/text_black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/zsy_frag_my_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zsy_frag_my_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="18428075928"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_below="@id/zsy_frag_my_phone"
+        android:layout_marginTop="64dp">
+
+        <RelativeLayout
+            android:id="@+id/zsy_frag_my_info"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:src="@mipmap/icon_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="个人中心"
+                android:textColor="#856464" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zsy_frag_my_changepwd"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:src="@mipmap/icon_czmm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="重置密码"
+                android:textColor="#856464" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zsy_frag_my_exit"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="17dp"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:src="@mipmap/icon_tcdl" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="退出登录"
+                android:textColor="#856464" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:layout_marginTop="15dp"
+    android:background="#fff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="29dp"
+        android:id="@+id/message_title"
+        android:text="密码修改提示"
+        android:textSize="16dp"
+        android:textColor="#383838"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/message_time"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:text="2017-01-14"
+        android:textSize="12dp"
+        android:textColor="#b2b2b2"/>
+    <TextView
+        android:id="@+id/message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:textSize="14dp"
+        android:textColor="#999"
+        android:text="你好，欢迎使用易采通，我是你的消息助手，请迅速前往个人中心修改密码"/>
+</RelativeLayout>
+</LinearLayout>

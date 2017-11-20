@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/zsy_login_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/zsy_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:text="登录外联通"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <View
+            android:layout_width="127dp"
+            android:layout_height="2px"
+            android:layout_below="@id/zsy_login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:background="@color/white">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_width="321dp"
+            android:layout_height="340dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="281dp"
+            android:background="@drawable/layout_background">
+
+            <RelativeLayout
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/zsy_login_phone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="53dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zsy_login_phone" />
+
+                    <EditText
+                        android:textColorHint="@color/text_gray"
+                        android:id="@+id/zsy_login_phone"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="34dp"
+                        android:background="@null"
+                        android:hint="请输入手机号码"
+                        android:inputType="number" />
+
+                    <View
+                        android:layout_width="237dp"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@+id/zsy_login_phone"
+                        android:layout_marginLeft="34dp"
+                        android:background="@color/text_gray">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/zsy_login_pwd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@id/zsy_login_phone_layout"
+                    android:layout_marginTop="34dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zsy_login_pwd" />
+
+                    <EditText
+                        android:textColorHint="@color/text_gray"
+                        android:inputType="textPassword"
+                        android:id="@+id/zsy_login_pwd"
+                        android:layout_width="237dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="34dp"
+                        android:background="@null"
+                        android:hint="请输入密码" />
+
+                    <View
+                        android:layout_width="237dp"
+                        android:layout_height="1px"
+                        android:layout_alignBottom="@+id/zsy_login_pwd"
+                        android:layout_marginLeft="34dp"
+                        android:background="@color/text_gray">
+
+                    </View>
+
+                    <ImageView
+                        android:id="@+id/zsy_login_showpwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:src="@mipmap/zsy_seenot_pwd" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/zsy_login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/zsy_login_pwd_layout"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/camera_btn_background"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/zsy_login_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/zsy_login_button"
+                    android:layout_below="@id/zsy_login_button"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:text="注册"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/zsy_login_forget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/zsy_login_button"
+                    android:layout_below="@id/zsy_login_button"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:text="忘记密码？"
+                    android:textColor="@color/text_gray"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

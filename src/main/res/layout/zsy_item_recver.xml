@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/item_recver_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="电子科技大学电子科技大学电子科技大学电子科技大学"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/item_recver_grade"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"/>
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:text="分"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/item_recver_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/recver_chat"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.example.wailiantong.View.imagebrowse.windowsView.ViewPagerFixed
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.wailiantong.View.imagebrowse.windowsView.ViewPagerFixed>
+
+
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:text="0/0"/>
+
+    <TextView
+        android:id="@+id/reTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:text="重拍"/>
+<TextView
+    android:id="@+id/browse_delete"
+    android:textColor="@android:color/white"
+    android:layout_margin="10dp"
+    android:padding="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="删除"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"/>
+</RelativeLayout>

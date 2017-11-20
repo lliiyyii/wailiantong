@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/temporary_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/temporary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="本次识别的置信度为："
+            android:textColor="@color/gongzhengtong_red"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/temporary_confidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temporary_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="正在加载..."
+            android:textColor="@color/gongzhengtong_red"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/photo_contrast_commit"
+            android:layout_width="295dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@color/gongzhengtong_red"
+            android:text="立即上传"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/temporary_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.victor.loading.rotate.RotateLoading
+            android:id="@+id/temporary_rotateloading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            app:loading_color="@color/gongzhengtong_red"
+            app:loading_width="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temporary_rotateloading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="正在上传..."
+            android:textColor="@color/gongzhengtong_red"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/commit_finish"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:text="上传完成"
+            android:textColor="@color/gongzhengtong_red"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/commit_back"
+            android:layout_width="295dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/dialog_red_btn"
+            android:text="点击返回首页"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

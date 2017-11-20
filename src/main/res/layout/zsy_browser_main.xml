@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/white">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/viewall_back"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="21dp"-->
+        <!--android:layout_marginTop="33dp"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@mipmap/white_back_icon" />-->
+        <TextView
+            android:id="@+id/view_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="33dp"
+            android:clickable="true"
+            android:text="取消"
+            android:textColor="@color/text_black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="全部照片"
+            android:textColor="@color/text_black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_main" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="#2b2b2b">
+
+        <Button
+            android:id="@+id/view_conti"
+            android:layout_width="130dp"
+            android:layout_height="43dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/view_pic_black_btn"
+            android:text="继续拍摄"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/view_upload"
+            android:layout_width="130dp"
+            android:layout_height="43dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/view_pic_red_btn"
+            android:text="立即上传"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</LinearLayout>

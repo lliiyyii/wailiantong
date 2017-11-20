@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="18.5dp"
+        android:background="@null">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/zsy_find_pwd_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="找回密码"
+            android:textColor="@color/title_text_color"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ddd"
+            android:elevation="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="335dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/zsy_find_pwd_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/text_black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/zsy_find_pwd_phone"
+                android:layout_width="336dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edittext_selector"
+                android:hint="  请输入手机号"
+                android:inputType="number"
+                android:paddingLeft="12dp"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/edit_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zsy_find_newpwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_below="@+id/zsy_find_pwd_phone_layout"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新密码"
+                android:textColor="@color/text_black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/zsy_find_pwd_new"
+                android:layout_width="336dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edittext_selector"
+                android:hint="  请输入新密码"
+                android:inputType="numberPassword"
+                android:paddingLeft="12dp"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/edit_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zsy_find_newpwd_again_layout"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_below="@+id/zsy_find_newpwd_layout"
+            android:layout_marginTop="30dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认新密码"
+                android:textColor="@color/text_black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/zsy_find_pwd_newagain"
+                android:layout_width="336dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edittext_selector"
+                android:hint="  请再次输入新密码"
+                android:inputType="numberPassword"
+                android:paddingLeft="12dp"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/edit_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/zsy_find_pwd_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_below="@+id/zsy_find_newpwd_again_layout"
+            android:layout_marginTop="30dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码"
+                android:textColor="@color/text_black"
+                android:textSize="15dp" />
+
+            <EditText
+
+                android:id="@+id/zsy_find_pwd_code"
+                android:layout_width="336dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edittext_selector"
+                android:hint="  请输入验证码"
+                android:paddingLeft="12dp"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/edit_text_size" />
+
+            <Button
+                android:id="@+id/zsy_find_pwd_getcode"
+                android:layout_width="90dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                android:background="#d1cfcd"
+                android:text="获取验证码"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/zsy_find_pwd_btn"
+            android:layout_width="141dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/zsy_find_pwd_code_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/camera_btn_background"
+            android:text="确认修改"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

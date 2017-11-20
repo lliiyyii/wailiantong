@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="18.5dp"
+        android:background="@color/bg_gray">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/zsy_businessdetail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="识别详情"
+            android:textColor="@color/title_text_color"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ddd"
+            android:elevation="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="95dp"
+            android:background="@color/bg_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="450dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="95dp"-->
+        <!--android:background="#fff">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="29dp"
+            android:background="@color/bg_gray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="65dp"
+                    android:text="识别类型"
+                    android:textColor="#999"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/business_detail_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:layout_marginLeft="140dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#383838"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="125dp"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#e6e6e6">
+
+                </View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80dp"
+                    android:text="当事人"
+                    android:textColor="#999"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/business_detail_party"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#383838"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="125dp"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#e6e6e6">
+
+                </View>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/business_detail_confidencelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80dp"
+                        android:text="证件号"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_liveidnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80dp"
+                        android:text="置信度"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_confidence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/business_detail_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/businessId"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13dp"
+                        android:text="统一社会信用代码"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_code_business"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/businessperson"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="55dp"
+                        android:text="法定代表人"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_company_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/businessdeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="68dp"
+                        android:text="营业期限"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/businessAdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="68dp"
+                        android:text="公司地址"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_adress_business"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/businessCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="68dp"
+                        android:text="注册资金"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_cost_business"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/business_detail_cardid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="68dp"
+                        android:text="身份号码"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardid_nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="92dp"
+                        android:text="民族"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_nation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="68dp"
+                        android:text="居住地址"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_liveadress"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_marginLeft="55dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="证件有效期"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_carddeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_marginLeft="68dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="签发机关"
+                        android:textColor="#999"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/business_detail_cardoffice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#383838"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="125dp"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#e6e6e6">
+
+                    </View>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:layout_marginLeft="92dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="原图"
+                    android:textColor="#999"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/business_detail_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:text="点击查看"
+                    android:textColor="#f65249"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="125dp"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#e6e6e6">
+
+                </View>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+</LinearLayout>

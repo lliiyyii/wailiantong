@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.wailiantong.CameraView.CameraHouseSurfaceView
+        android:id="@+id/re_house_cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.wailiantong.CameraView.CameraHouseTopRectView
+        android:id="@+id/re_house_rectOnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/re_house_takePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@color/gongzhengtong_red"
+            android:text="拍照"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/re_house_camera_viewall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="@color/gongzhengtong_red"
+            android:text="查看"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</FrameLayout>
