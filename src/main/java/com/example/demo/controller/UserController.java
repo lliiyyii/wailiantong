@@ -174,12 +174,15 @@ public class UserController {
         jsonObject.put("certify",usr.getCertify());
         if (usr.getIdentity_img()!=null)
         jsonObject.put("identity",usr.getIdentity_img());
+        else jsonObject.put("identity","");
         if (usr.getHead()!=null){
             jsonObject.put("head",usr.getHead());
         }
+        else jsonObject.put("head","");
         if(usr.getBusiness_img()!=null){
             jsonObject.put("business",usr.getBusiness_img());
         }
+        else jsonObject.put("business","");
         return jsonObject;
     }
 
