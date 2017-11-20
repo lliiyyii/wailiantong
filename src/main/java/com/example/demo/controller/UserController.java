@@ -130,14 +130,6 @@ public class UserController {
             return new BaseApi("error", 0, null);
         }
     }
-    /**
-     * 忘记密码
-     */
-
-
-    /**
-     * 修改密码
-     */
 
     /**
      * 请求个人信息
