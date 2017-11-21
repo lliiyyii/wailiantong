@@ -4,6 +4,7 @@
 - charset:UTF-8
 
 ## api文件
+> 来自coding链接打不开
 
 ### 该目录下
 
@@ -21,6 +22,8 @@
 #8 | detail | 订单的具体内容
 #9 | edit | 修改订单
 #10 |  mysend | 用户发布订单列表
+#17 | myReceive | 用户接收的订单列表
+#18 | AllMyOrder | 用户的全部订单列表
 
 ### 用户相关
 
