@@ -20,6 +20,8 @@
 detail | 订单的具体内容的展示
 edit | 修改订单内容，价格等
  mysend | 用户发布订单列表
+ myAllOrder | 用户相关的所有订单
+ myReceive | 用户接收的所有订单
 
 ### 用户相关
 
